@@ -103,7 +103,7 @@ namespace MailOrderPharmacyRefillService.Repository
         public dynamic Calculation_Dues(int subscription_id, string freq, DateTime date)
         { 
             List<RefillDetails> Pending = new List<RefillDetails>();
-            if (freq == "Weekly")
+            if (string.Equals(freq,"Weekly"))
             {
                 int month = date.Month;
                 int nxtmonth = month + 1;
