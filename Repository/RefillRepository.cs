@@ -85,7 +85,7 @@ namespace MailOrderPharmacyRefillService.Repository
             {
                 data = response.Content.ReadAsStringAsync().Result;
 
-                Subs s = JsonConvert.DeserializeObject<Subs>(data);
+                Subscription s = JsonConvert.DeserializeObject<Subscription>(data);
                 freq = s.RefillOccurrence;
 
             }

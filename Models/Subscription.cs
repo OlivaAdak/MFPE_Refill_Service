@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace MailOrderPharmacyRefillService.Models
 {
-    public class Subs
+    public class Subscription
     {
         public int Drug_ID { get; set; }
         public int Sub_id { get; set; }
